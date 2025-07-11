@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ticuna-cache-v2'; // <-- IMPORTANTE: Troque para 'ticuna-cache-v2' ou um novo nome para forçar a atualização!
+const CACHE_NAME = 'ticuna-cache-v100'; // <-- IMPORTANTE: Troque para 'ticuna-cache-v2' ou um novo nome para forçar a atualização!
 const urlsToCache = [
   '/idioma-ticuna/', // A raiz do seu site
   '/idioma-ticuna/index.html',
