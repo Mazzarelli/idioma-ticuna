@@ -1,10 +1,12 @@
-const CACHE_NAME = 'ticuna-cache-v1';
+const CACHE_NAME = 'ticuna-cache-v2'; // <-- IMPORTANTE: Troque para 'ticuna-cache-v2' ou um novo nome para forçar a atualização!
 const urlsToCache = [
   '/idioma-ticuna/', // A raiz do seu site
   '/idioma-ticuna/index.html',
   '/idioma-ticuna/manifest.json',
-  '/idioma-ticuna/icon-192x192.png', // Você precisará criar esses ícones
-  '/idioma-ticuna/icon-512x512.png'  // Você precisará criar esses ícones
+  '/idioma-ticuna/icon-192x192.png',
+  '/idioma-ticuna/icon-512x512.png',
+  '/idioma-ticuna/favicon.png', // <--- ADICIONE ESTA LINHA para cache do favicon
+  '/idioma-ticuna/service-worker.js' // Você precisará criar esses ícones
   // Adicione aqui outros arquivos que seu site usa (CSS, JavaScript, imagens, etc.)
 ];
 
