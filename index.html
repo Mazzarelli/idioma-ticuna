@@ -3,6 +3,22 @@ DICIONÁRIO TICUNA
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="manifest" href="/idioma-ticuna/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Ticuna App">
+<link rel="apple-touch-icon" href="/idioma-ticuna/icon-192x192.png">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/idioma-ticuna/service-worker.js').then(function(registration) {
+        console.log('ServiceWorker registrado com sucesso:', registration.scope);
+      }).catch(function(err) {
+        console.log('Falha no registro do ServiceWorker:', err);
+      });
+    });
+  }
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo sobre o Idioma Ticuna</title>
