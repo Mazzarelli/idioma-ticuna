@@ -1,39 +1,18 @@
-DICIONÁRIO TICUNA
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idioma Ticuna</title>
+
     <link rel="apple-touch-icon" href="/idioma-ticuna/icon-192x192.png">
     <link rel="icon" type="image/png" href="/idioma-ticuna/favicon.png">
     <link rel="manifest" href="/idioma-ticuna/manifest.json">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Ticuna App">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idioma Ticuna</title>
-    <link rel="manifest" href="/idioma-ticuna/manifest.json"> <link rel="icon" type="image/png" href="/idioma-ticuna/favicon.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="Ticuna App">
-    <script>
-        // ... seu código do service worker ...
-    </script>
-    <style>
-        /* ... seu estilo ... */
-    </style>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/idioma-ticuna/service-worker.js').then(function(registration) {
-        console.log('ServiceWorker registrado com sucesso:', registration.scope);
-      }).catch(function(err) {
-        console.log('Falha no registro do ServiceWorker:', err);
-      });
-    });
-  }
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Idioma Ticuna</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -97,9 +76,20 @@ DICIONÁRIO TICUNA
             text-decoration: underline;
         }
     </style>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/idioma-ticuna/service-worker.js').then(function(registration) {
+                    console.log('ServiceWorker registrado com sucesso:', registration.scope);
+                }).catch(function(err) {
+                    console.log('Falha no registro do ServiceWorker:', err);
+                });
+            });
+        }
+    </script>
 </head>
 <body>
-
     <h1>Sumário</h1>
     <ul>
         <li><a href="#pronuncia-em-ticuna">Pronúncia em Ticuna</a></li>
